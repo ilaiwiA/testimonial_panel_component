@@ -30,6 +30,7 @@ body {
     grid-template-columns: repeat(5, auto);
     grid-auto-rows: minmax(100px, auto);
     gap: 2em;
+    max-width: 123em;
 }
 
 .card {
@@ -86,6 +87,10 @@ img {
     grid-column: 1/4;
 }
 
+#card_daniel p {
+    color: var(--light__gray);
+}
+
 #card_jonathan {
     background-color: var(--very__dark__grayish__blue);
     color: white;
@@ -109,13 +114,24 @@ img {
     background-color: white;
 }
 
+#card_kira p {
+    color: var(--very__dark__grayish__blue);
+}
+
 @media screen and (max-width: 1200px) {
+    h1  {
+        font-size: 1.75em;
+    }
+
+    body {
+        display: flex;
+        padding: 2em;
+    }
 
     .container {
         display: flex;
         flex-direction: column;
-        padding: 0 2em;
-        background-color: brown;
+        width: 100%;
     }
     
 }
